@@ -10,9 +10,9 @@ import keys from '../../config/keys';
 const MyMapComponent = withScriptjs(withGoogleMap((props) =>
   <GoogleMap
     defaultZoom={10}
-    defaultCenter={{ lat: -34.397, lng: 150.644 }}
+    defaultCenter={{ lat: 32.2750268, lng: 34.8458601 }}
   >
-    {props.isMarkerShown && <Marker position={{ lat: -34.397, lng: 150.644 }} />}
+    {props.isMarkerShown && <Marker position={{ lat: 32.2750268, lng: 34.8458601 }} />}
   </GoogleMap>
 ))
 
