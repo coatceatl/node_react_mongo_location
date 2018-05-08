@@ -5,7 +5,7 @@ import {
 } from 'react-router-dom';
 
 const Header = () => <h2>Header</h2>
-const Dashboard = () => <h2>Dashboard</h2>
+import SearchMap from './components/SearchMap.jsx';
 
 
 class App extends Component {
@@ -14,8 +14,8 @@ class App extends Component {
       <div>
         <BrowserRouter>
           <div>
-            <Route exact path='/' component={Header} />
-            <Route path='/dashboard' component={Dashboard} />
+            <Route path='/' component={Header} />
+            <Route path='/' component={SearchMap} />
           </div>
         </BrowserRouter>
       </div>
