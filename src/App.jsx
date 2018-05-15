@@ -4,7 +4,7 @@ import {
   Route
 } from 'react-router-dom';
 
-const Header = () => <h2>Header</h2>
+import Header from './components/Header.jsx';
 import SearchMap from './components/SearchMap.jsx';
 
 
