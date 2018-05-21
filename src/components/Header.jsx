@@ -7,7 +7,7 @@ class Header extends Component {
         <a className='header-logo' href='#'>Logo</a>
         <ul className='header-menu'>
           <li>
-            <a href='#'>Sign In</a>
+            <a href='/auth/google'>Sign In</a>
           </li>
         </ul>
       </div>
