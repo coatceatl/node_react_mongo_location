@@ -79,7 +79,7 @@
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-eval("\n\nmodule.exports = {\n  mapKey: 'AIzaSyBeDIM2Tfp0n5sZaKT5J9_der6Qeo_bkCQ',\n  googleClientID: '59658421344-vlkhhg5pqrnndgiptjn711v39amnq954.apps.googleusercontent.com',\n  googleClientSecret: 'MtpesmxJ8shDPxIxm854884o'\n};\n\n//# sourceURL=webpack:///./config/keys.js?");
+eval("\n\nmodule.exports = {\n  mapKey: 'AIzaSyBeDIM2Tfp0n5sZaKT5J9_der6Qeo_bkCQ',\n  googleClientID: '59658421344-vlkhhg5pqrnndgiptjn711v39amnq954.apps.googleusercontent.com',\n  googleClientSecret: 'MtpesmxJ8shDPxIxm854884o',\n  cookieKey: 'dfkjsvjnvfkjnvfdvadf'\n};\n\n//# sourceURL=webpack:///./config/keys.js?");
 
 /***/ }),
 
