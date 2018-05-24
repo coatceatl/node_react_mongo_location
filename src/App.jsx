@@ -3,19 +3,24 @@ import {
   BrowserRouter,
   Route
 } from 'react-router-dom';
+import { connect } from 'react-redux';
+import * as actions from './actions';
 
 import Header from './components/Header.jsx';
 import SearchMap from './components/SearchMap.jsx';
 
 
 class App extends Component {
+  componentDidMount() {
+    this.props.fetchUser();
+  }
   render() {
     return (
       <div>
         <BrowserRouter>
           <div>
-            <Route path='/' component={Header} />
-            <Route path='/' component={SearchMap} />
+            <Header />
+            <Route exact path='/' component={SearchMap} />
           </div>
         </BrowserRouter>
       </div>
@@ -23,5 +28,5 @@ class App extends Component {
   }
 }
 
-export default App
+export default connect(null, actions)(App)
 
