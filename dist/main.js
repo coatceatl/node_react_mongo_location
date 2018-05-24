@@ -5201,7 +5201,7 @@ eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\n
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\nexports.fetchUser = undefined;\n\nvar _axios = __webpack_require__(/*! axios */ \"./node_modules/axios/index.js\");\n\nvar _axios2 = _interopRequireDefault(_axios);\n\nvar _types = __webpack_require__(/*! ./types */ \"./src/actions/types.js\");\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\nvar fetchUser = exports.fetchUser = function fetchUser() {\n  return function (dispatch) {\n    _axios2.default.get('/api/current_user').then(function (res) {\n      return dispatch({ type: _types.FETCH_USER, payload: res });\n    });\n  };\n};\n\n//# sourceURL=webpack:///./src/actions/index.js?");
+eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\nexports.fetchUser = undefined;\n\nvar _axios = __webpack_require__(/*! axios */ \"./node_modules/axios/index.js\");\n\nvar _axios2 = _interopRequireDefault(_axios);\n\nvar _types = __webpack_require__(/*! ./types */ \"./src/actions/types.js\");\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\nvar fetchUser = exports.fetchUser = function fetchUser() {\n  return function (dispatch) {\n    _axios2.default.get('/api/current_user').then(function (res) {\n      return dispatch({ type: _types.FETCH_USER, payload: res.data });\n    });\n  };\n};\n\n//# sourceURL=webpack:///./src/actions/index.js?");
 
 /***/ }),
 
@@ -5261,7 +5261,7 @@ eval("\n\nvar _react = __webpack_require__(/*! react */ \"./node_modules/react/i
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\n\nexports.default = function () {\n  var state = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {};\n  var action = arguments[1];\n\n  console.log(action);\n  switch (action.type) {\n    default:\n      return state;\n  }\n};\n\n//# sourceURL=webpack:///./src/reducers/authReducer.js?");
+eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\n\nexports.default = function () {\n  var state = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : null;\n  var action = arguments[1];\n\n  switch (action.type) {\n    case _types.FETCH_USER:\n      return action.payload || false;\n    default:\n      return state;\n  }\n};\n\nvar _types = __webpack_require__(/*! ../actions/types */ \"./src/actions/types.js\");\n\n//# sourceURL=webpack:///./src/reducers/authReducer.js?");
 
 /***/ }),
 
