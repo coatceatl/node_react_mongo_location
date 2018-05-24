@@ -8,7 +8,7 @@ import * as actions from './actions';
 
 import Header from './components/Header.jsx';
 import SearchMap from './components/SearchMap.jsx';
-const Reviews = () => { Reviews }
+import Review from './components/Review.jsx';
 
 
 class App extends Component {
@@ -22,7 +22,7 @@ class App extends Component {
           <div>
             <Header />
             <Route exact path='/' component={SearchMap} />
-            <Route path='/reviews' component={Reviews} />
+            <Route path='/review' component={Review} />
           </div>
         </BrowserRouter>
       </div>
