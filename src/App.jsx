@@ -9,6 +9,9 @@ import * as actions from './actions';
 import Header from './components/Header.jsx';
 import SearchMap from './components/SearchMap.jsx';
 import Review from './components/Review.jsx';
+const Dashboard = () => <h1>Dashboard</h1>;
+const SearchContent = () => <h1>Search Main Page</h1>;
+const Footer = () => <h1>Footer</h1>;
 
 
 class App extends Component {
@@ -21,8 +24,11 @@ class App extends Component {
         <BrowserRouter>
           <div>
             <Header />
-            <Route exact path='/' component={SearchMap} />
+            <Route exact path='/' component={SearchContent} />
+            <Route path='/dashboard' component={Dashboard} />
+            <Route path='/searchmap' component={SearchMap} />
             <Route path='/review' component={Review} />
+            <Footer />
           </div>
         </BrowserRouter>
       </div>

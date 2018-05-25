@@ -16,7 +16,7 @@ class Header extends Component {
   render() {
     return (
       <div className='header-wrapper'>
-        <a className='header-logo' href='#'>Logo</a>
+        <a className='header-logo' href='/'>Logo</a>
         <ul className='header-menu'>
           { this.renderContent() }
         </ul>
