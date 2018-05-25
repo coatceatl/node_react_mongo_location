@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 
+import Navigation from './Navigation.jsx';
+
 class Header extends Component {
   renderContent() {
     switch (this.props.auth) {
@@ -16,7 +18,7 @@ class Header extends Component {
   render() {
     return (
       <div className='header-wrapper'>
-        <a className='header-logo' href='/'>Logo</a>
+        <Navigation />
         <ul className='header-menu'>
           { this.renderContent() }
         </ul>
