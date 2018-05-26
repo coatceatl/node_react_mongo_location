@@ -18,10 +18,14 @@ class Header extends Component {
   render() {
     return (
       <div className='header-wrapper'>
-        <Navigation />
-        <ul className='header-menu'>
-          { this.renderContent() }
-        </ul>
+        <div className='nav-left'>
+          <Navigation />
+        </div>
+        <div className='nav-right'>
+          <div className='nav-tools'>
+            { this.renderContent() }
+          </div>
+        </div>
       </div>
     );
   }
